@@ -1,6 +1,6 @@
 # Sample-Project
-<br />
-clear articulator 
+
+## clear articulator 
 CQRS Pattern
 Code First
 Swagger
