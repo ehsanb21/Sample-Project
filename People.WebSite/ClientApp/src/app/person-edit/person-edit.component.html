@@ -1,0 +1,58 @@
+<div class="row">
+  <div class="card col-md-6 offset-md-3 offset-md-3">
+    <form (submit)="onSubmit()" (change)="changeState">
+      <div class="dx-fieldset">
+        <h3 class="text-center"> Update Person </h3>
+        <hr />
+        <dx-form [formData]="person"
+                 [colCount]="2">
+          <dxi-item dataField="FirstName">
+            <dxi-validation-rule type="required"
+                                 message="*">
+            </dxi-validation-rule>
+            <dxi-validation-rule type="pattern"
+                                 [pattern]="namePattern"
+                                 message="Do not use digits in the First Name name">
+            </dxi-validation-rule>
+          </dxi-item>
+          <dxi-item dataField="LastName"><dxi-validation-rule type="pattern"
+                     [pattern]="namePattern"
+                     message="Do not use digits in the LastName name">
+</dxi-validation-rule>
+            <dxi-validation-rule  type="required"
+                                 
+                                 message="*">
+            </dxi-validation-rule>
+          </dxi-item>
+          
+
+          <dxi-item dataField="IranStateId"
+                    editorType="dxSelectBox"
+                    [editorOptions]="{ dataSource: states ,displayExpr: 'name', valueExpr: 'id'  ,onValueChanged: changeState }">
+            <dxi-validation-rule type="required" message="Country is required">
+            </dxi-validation-rule>
+          </dxi-item>
+
+          <dxi-item dataField="IranCityId"
+                    editorType="dxSelectBox"
+                    [editorOptions]="{ dataSource: cites ,displayExpr: 'name', valueExpr: 'id' }">
+            <dxi-validation-rule type="required" message="Country is required">
+            </dxi-validation-rule>
+          </dxi-item>
+
+          <dxi-item itemType="button"
+                    horizontalAlignment="center"
+                    [buttonOptions]="submitButtonOptions">
+          </dxi-item>
+        </dx-form>
+      </div>
+    </form>
+    </div></div>
+
+
+
+
+
+
+
+    
