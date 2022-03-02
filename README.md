@@ -1,8 +1,8 @@
 # Sample-Project
 
-## clear articulator 
-CQRS Pattern
-Code First
-Swagger
-OData
-Devextreme
+## Clear Articulator 
+##CQRS Pattern
+##Code First
+##Swagger
+##OData
+##Devextreme
