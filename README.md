@@ -9,4 +9,5 @@
 ## Code First
 ## Swagger
 ## OData
+## Angular
 ## Devextreme
